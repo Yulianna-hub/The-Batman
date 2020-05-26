@@ -185,7 +185,7 @@ body {
     color: #FFFFFF;
     font-size: 14px;
     line-height: 16px;
-    border: none;
+    border: none; 
 }
 
 .actors-title {
@@ -213,7 +213,11 @@ body {
 }
 
 .tabs-content {
+    display: none;
     margin-right: 70px;
+}
+.visible {
+    display: block;
 }
 
 .tabs {
@@ -273,6 +277,11 @@ body {
     border: none;
     padding: 12px;
 
+}
+footer {
+    height: 70px;
+    background-color: #0A090A;
+    text-align: center;
 }
 
 @media (max-width: 1200px) {

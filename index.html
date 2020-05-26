@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">    
 </head>
 <body>
     <div class="container">
@@ -32,7 +33,7 @@
             <div class="movio-info">
             <span class="tag">фильм</span>
             <span class="country">США, 2021 год</span>
-            <a href="#" class="play">Смотреть трейлер</a>
+            <a data-fancybox href="https://youtu.be/g3__IrGUjo0" class="play">Смотреть трейлер</a>
             </div>
             <a href="#" class="more">Подробнее</a>
         </div>
@@ -58,19 +59,19 @@
             <!-- /.short-info -->
             <div class="full-info">
                 <nav class="tabs">
-                    <a href="" class="tabs-item tabs-item-active">Описание</a>
-                    <a href="" class="tabs-item">Рецензии</a>
-                    <a href="" class="tabs-item">Премьера</a>
-                    <a href="" class="tabs-item">Актеры</a>
-                    <a href="" class="tabs-item">Награды</a>
-                    <a href="" class="tabs-item">Факты</a>
-                    <a href="" class="tabs-item">Сайты</a>
+                    <a href="#about" class="tabs-item tabs-item-active">Описание</a>
+                    <a href="#reviews" class="tabs-item">Рецензии</a>
+                    <a href="#premieres" class="tabs-item">Премьера</a>
+                    <a href="#actors" class="tabs-item">Актеры</a>
+                    <a href="#awards" class="tabs-item">Награды</a>
+                    <a href="#facts" class="tabs-item">Факты</a>
+                    <a href="#sites" class="tabs-item">Сайты</a>
                     <a href="" class="tabs-item">
                         <img src="./img/bookmark-icon.svg" alt="bookmark" class="bookmark-added">
                     </a>
                 </nav>
                 <div class="full-content">
-                    <div class="tabs-content">
+                    <div class="tabs-content visible" id="about">
                         <p class="text">Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах издательства DC Comics. 
                         Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтме.
                        </p>
@@ -87,6 +88,24 @@
                             8 сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.</p>
                         </p>
                 </div>
+                <div class="tabs-content" id="reviews">
+                    <p>#RobertPattinson never stopped being an internet phenomenon after playing Edward Cullen in the five-part
+                        “Twilight” series, which grossed an extraordinary $3.3 billion worldwide and turned him into the most lusted-after mortal since Leonardo DiCaprio in “Titanic.”
+                        But after the franchise ended in 2012, Pattinson took the opposite path from mass blockbusters, working instead with indie auteurs such as David Cronenberg (“Maps to the Stars” and “Cosmopolis”),
+                        James Gray (“The Lost City of Z”), the Safdie brothers (“Good Time”), Claire Denis (“High Life”) and David Michôd (“The Rover” and “The King”).
+                        Pattinson relished playing character parts, not needing to worry about hype and audience expectations.
+                        He’d been chasing #Batman for much longer than anyone knew. Pattinson had heard that Reeves was working on a script that reimagines Bruce Wayne in the younger years of his life.
+                        “I’d had Batman in my mind for a while,” Pattinson says. “It’s such an absurd thing to say. I sort of had an idea to do it, and I’d been prodding Matt. He didn’t accept any prods.
+                        I kept asking to meet him.”
+                        Pattinson’s career has taken another turn as he’s begun gravitating back toward the stormy clouds of movie stardom. He spent most of his summer in Estonia making the Nolan film,
+                        which arrives in theaters in July 2020. And of course, despite his concerns, he was cast in #TheBatman the Warner Bros.
+                        Tentpole from director Matt Reeves that will start shooting this winter and debuts in June 2021.</p>
+                </div> 
+                <div class="tabs-content" id="premieres"></div>
+                <div class="tabs-content" id="actors"></div>
+                <div class="tabs-content" id="awards"></div>
+                <div class="tabs-content" id="facts"></div>
+                <div class="tabs-content" id="sites"></div>
                 <div class="subscribe">
                     <h3 class="subscribe-title">Подпишитесь на обновления</h3>
                     <form action="#" class="subscribe-form">
@@ -107,6 +126,14 @@
         <!-- /.content -->
     </main>
     </div>
-    
+    <!--подслючаю библиотеку jQuery-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>  
+    <!--подслючаю fancybox-->
+    <script src="script/jquery.fancybox.min.js"></script>
+    <script src="script/main.js"></script>
 </body>
+<footer>
+    <h5>© Yuliia Borys 2020</h5>
+
+</footer>
 </html>
